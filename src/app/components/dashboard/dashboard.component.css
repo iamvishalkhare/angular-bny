@@ -1,0 +1,35 @@
+.tab{
+    padding: 1em;
+    height: 100%;
+}
+.tab:hover{
+    background-color: black;
+    color : #fff;
+    cursor: pointer;
+}
+td{
+    padding: 2em;
+}
+mat-table{
+    margin-top: 2em;
+    padding: 0.5em;
+}
+.editBtn{
+    margin-top: 0.5em;
+}
+label{
+    padding-top: 0.5em;
+}
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    padding: 24px;
+}
+.graphs{
+    display: flex;
+    justify-content: space-between;
+}
+.Chart{
+    width: 50%;
+}
+.pie{
+    height: 200px;
+}

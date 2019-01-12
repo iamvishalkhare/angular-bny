@@ -1,0 +1,27 @@
+<div class="container outercontainer">
+  <mat-card>
+    <mat-card-title>
+      Login
+    </mat-card-title>
+    <mat-card-subtitle>
+      Please use your login credentials to log in to the system
+    </mat-card-subtitle>
+    <form [formGroup]="loginForm" (ngSubmit)="submitCredentials()">
+      <div>
+        <mat-form-field>
+          <input matInput type="email" placeholder="E-Mail" formControlName="email">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" formControlName="password">
+        </mat-form-field>
+      </div>
+      <div class="row messagediv" *ngIf="showMsgDiv" contenteditable="false" [textContent]="messageForDiv" (input)="messageForDiv=$event.target.textContent">
+      </div>
+      <div>
+        <button mat-raised-button >Submit</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

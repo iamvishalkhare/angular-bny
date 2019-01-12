@@ -1,0 +1,14 @@
+.messagediv{
+    color: red;
+    font-size: 0.8em;
+    padding: 0.5em;
+    padding-left: 1em;
+}
+mat-card {
+    margin-top: 5em;
+    width: 30%;
+}
+.outercontainer{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,55 @@
+<h2>Edit details</h2>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label>Name: </label>
+    </div>
+    <div class="col">
+      <mat-form-field>
+        <input type="text" matInput [(ngModel)]=data.name>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label>Description: </label>
+    </div>
+    <div class="col">
+      <mat-form-field>
+        <textarea type="text" matInput [(ngModel)]=data.description></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label>Office: </label>
+    </div>
+    <div class="col">
+      <mat-form-field>
+        <textarea type="text" matInput [(ngModel)]=data.office></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label>Party: </label>
+    </div>
+    <div class="col">
+      <mat-form-field>
+        <input type="text" matInput [(ngModel)]=data.party>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label>State: </label>
+    </div>
+    <div class="col">
+      <mat-form-field>
+        <input type="text" matInput [(ngModel)]=data.state>
+      </mat-form-field>
+    </div>
+  </div>
+  <button mat-raised-button color="primary" (click)="save(data.id)">Save Changes</button> &nbsp;&nbsp;
+  <button mat-raised-button [mat-dialog-close]="data.id" cdkFocusInitial>Close</button>
+</div>
